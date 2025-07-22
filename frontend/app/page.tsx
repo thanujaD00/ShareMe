@@ -3,6 +3,9 @@ import HeroSection from "../components/HeroSection";
 import StatsBar from "../components/StatsBar";
 import WhyChooseSection from "../components/WhyChooseSection";
 import PopularProductsSection from "../components/PopularProductsSection";
+import WhyUsefulSection from "../components/WhyUsefulSection";
+import TestimonialSection from "../components/TestimonialSection";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +15,9 @@ export default function Home() {
       <StatsBar />
       <WhyChooseSection />
       <PopularProductsSection />
+      <WhyUsefulSection />
+      <TestimonialSection />
+      <Footer />
     </div>
   );
 }
