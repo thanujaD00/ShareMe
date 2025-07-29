@@ -4,7 +4,16 @@ const AboutUsSection = () => {
     return (
         <>
             {/* First Section - Who We Are */}
-            <section className="w-full bg-[#181f33] py-16 px-4">
+            <section className="w-full bg-[#181f33] py-16 px-4 pt-50">
+                {/* Hero Section */}
+                <div className="text-center mb-20">
+                    <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
+                        Who We Are
+                    </h1>
+                    <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                        Learn More About Us
+                    </p>
+                </div>
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Left Content - Company Info */}
@@ -144,15 +153,7 @@ const AboutUsSection = () => {
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
-                    {/* Hero Section */}
-                    <div className="text-center mb-20">
-                        <h1 className="text-5xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">
-                            Who We Are
-                        </h1>
-                        <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                            Learn More About Us
-                        </p>
-                    </div>
+
 
                     {/* Main Content Section */}
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

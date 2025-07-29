@@ -129,13 +129,11 @@ const TestimonialSection = () => {
                         {testimonial.name.split(' ').map(n => n[0]).join('')}
                       </span>
                     </div>
-                    <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-gray-800"></div>
                   </div>
                   <div>
                     <h4 className="text-white font-bold text-lg group-hover:text-red-400 transition-colors duration-300">
                       {testimonial.name}
                     </h4>
-                    <p className="text-gray-400 text-sm">Verified Customer</p>
                   </div>
                 </div>
 

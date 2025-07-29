@@ -11,13 +11,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a1629] text-white font-sans">
       <Navbar />
-      <HeroSection />
-      <StatsBar />
-      <WhyChooseSection />
-      <PopularProductsSection />
-      <WhyUsefulSection />
-      <TestimonialSection />
-      <Footer />
+      <div className="pt-24">
+        <HeroSection />
+        <StatsBar />
+        <WhyChooseSection />
+        <PopularProductsSection />
+        <WhyUsefulSection />
+        <TestimonialSection />
+        <Footer />
+      </div>
     </div>
   );
 }

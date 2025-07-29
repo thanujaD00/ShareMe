@@ -105,7 +105,6 @@ const PopularProductsSection = () => {
                 {/* Badge for featured product */}
                 {index === 1 && (
                   <div className="absolute -top-3 -right-3 bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-                    POPULAR
                   </div>
                 )}
 
@@ -183,9 +182,9 @@ const PopularProductsSection = () => {
                   </div>
 
                   {/* Enhanced CTA Button */}
-                  <button className="mt-6 w-full px-8 py-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg text-lg font-bold text-white shadow-xl transition-all duration-300 transform hover:scale-105">
+                  {/* <button className="mt-6 w-full px-8 py-3 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg text-lg font-bold text-white shadow-xl transition-all duration-300 transform hover:scale-105">
                     Get Quote Now
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

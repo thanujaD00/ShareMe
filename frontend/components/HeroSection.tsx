@@ -14,7 +14,7 @@ const HeroSection = () => (
       <div className="absolute top-1/2 left-1/2 w-36 h-36 bg-red-500/5 rounded-full blur-3xl animate-pulse delay-4000"></div>
     </div>
 
-    <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-8 pt-20 pb-8 gap-12 md:gap-20" style={{ minHeight: "650px" }}>
+    <div className="relative z-10 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-8 pt-32 pb-8 gap-12 md:gap-20" style={{ minHeight: "650px" }}>
       {/* Image/Mockup - enhanced with effects */}
       <div className="flex-1 flex justify-center md:justify-start items-center">
         <div className="relative">
@@ -60,7 +60,7 @@ const HeroSection = () => (
         
         <div className="flex flex-col sm:flex-row gap-4 mt-4">
           <button className="px-10 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg text-lg md:text-xl font-bold flex items-center justify-center gap-4 shadow-xl transition-all duration-300 transform hover:scale-105 font-[var(--font-poppins)]">
-            Buy Now
+            Get A Quote
             <span className="inline-flex items-center justify-center w-7 h-7">
               <svg className="w-6 h-6" fill="none" stroke="white" strokeWidth="2.5" viewBox="0 0 24 24">
                 <circle cx="12" cy="12" r="10" stroke="white" strokeWidth="2.5" fill="none" />
@@ -72,22 +72,6 @@ const HeroSection = () => (
           <button className="px-10 py-4 bg-transparent border-2 border-gray-600 hover:border-red-500 hover:bg-red-500/10 rounded-lg text-lg md:text-xl font-bold text-white transition-all duration-300 font-[var(--font-poppins)]">
             Learn More
           </button>
-        </div>
-
-        {/* Stats or features */}
-        <div className="flex flex-wrap gap-8 mt-8">
-          <div className="text-center">
-            <div className="text-2xl font-bold text-red-500">1000+</div>
-            <div className="text-sm text-gray-400">Happy Customers</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-red-500">24/7</div>
-            <div className="text-sm text-gray-400">Support</div>
-          </div>
-          <div className="text-center">
-            <div className="text-2xl font-bold text-red-500">100%</div>
-            <div className="text-sm text-gray-400">Secure</div>
-          </div>
         </div>
       </div>
     </div>
