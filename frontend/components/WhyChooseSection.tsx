@@ -30,23 +30,68 @@ const features = [
 ];
 
 const WhyChooseSection = () => (
-  <section className="w-full bg-[#0a1629] py-16 px-4">
-    <div className="max-w-5xl mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl font-extrabold mb-3 text-white">Why Choose Our ShareMe Cards?</h2>
-      <p className="text-gray-300 text-lg mb-10">Experience The Future Of Networking With Our Innovative NFC Business Cards</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <section className="w-full min-h-screen bg-[#0a1629] relative overflow-hidden">
+    {/* Background overlay with tech-inspired pattern */}
+    <div className="absolute inset-0 bg-gradient-to-br from-[#0a1629] via-[#1a2b4a] to-[#0a1629] opacity-90"></div>
+
+    {/* Animated background elements */}
+    <div className="absolute inset-0">
+      <div className="absolute top-20 right-10 w-32 h-32 bg-red-500/10 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute top-60 left-20 w-24 h-24 bg-blue-400/10 rounded-full blur-lg animate-pulse delay-1000"></div>
+      <div className="absolute bottom-40 right-1/4 w-40 h-40 bg-cyan-400/10 rounded-full blur-2xl animate-pulse delay-2000"></div>
+      <div className="absolute bottom-20 left-1/3 w-28 h-28 bg-teal-400/10 rounded-full blur-lg animate-pulse delay-3000"></div>
+    </div>
+
+    <div className="relative z-10 max-w-7xl mx-auto px-4 py-16">
+      {/* Section Header */}
+      <div className="text-center mb-20">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-white leading-tight">
+          Why Choose Our <span className="text-red-500">ShareMe</span> Cards?
+        </h2>
+        <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+          Experience The Future Of Networking With Our Innovative NFC Business Cards
+        </p>
+      </div>
+
+      {/* Features Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {features.map((f, i) => (
           <div
             key={f.title}
-            className={
-              `flex flex-col items-start p-6 rounded-xl border border-transparent transition text-left hover:border-red-500 bg-[#16213e]`
-            }
+            className="group relative overflow-hidden"
           >
-            <div className="mb-3">{f.icon}</div>
-            <h3 className="text-lg font-bold text-white mb-1">{f.title}</h3>
-            <p className="text-gray-300 text-sm leading-relaxed">{f.desc}</p>
+            {/* Card Background with Gradient */}
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl"></div>
+            <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 to-blue-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            
+            {/* Card Content */}
+            <div className="relative flex flex-col items-start p-8 rounded-2xl border border-gray-700/50 group-hover:border-red-500/50 transition-all duration-500 backdrop-blur-sm">
+              {/* Icon with enhanced styling */}
+              <div className="mb-6 p-4 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-xl group-hover:scale-110 transition-transform duration-300">
+                {f.icon}
+              </div>
+              
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-red-400 transition-colors duration-300">
+                {f.title}
+              </h3>
+              
+              <p className="text-gray-300 leading-relaxed group-hover:text-gray-200 transition-colors duration-300">
+                {f.desc}
+              </p>
+
+              {/* Decorative elements */}
+              <div className="absolute -top-2 -right-2 w-6 h-6 bg-red-500/20 rounded-full blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute -bottom-2 -left-2 w-8 h-8 bg-blue-500/20 rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            </div>
           </div>
         ))}
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center mt-16">
+        <button className="px-12 py-4 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 rounded-lg text-lg font-bold text-white shadow-xl transition-all duration-300 transform hover:scale-105">
+          Get Your ShareMe Card Today
+        </button>
       </div>
     </div>
   </section>
